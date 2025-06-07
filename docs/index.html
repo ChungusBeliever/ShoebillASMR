@@ -3,20 +3,36 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>ChungusBeliever</title>
+        <title>Shoebill ASMR</title>
         <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
         <meta name="description" content="shoebill asmr">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <script src="home.js" async defer></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/asmr.js" async defer></script>
+        <script src="js/sidebar.js" async defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Title -->
+        <div id="title">
+            <img src="resources/favicon.ico">
+            <h2>Shoebill ASMR</h2>
+            <img src="resources/favicon.ico">
+        </div>
+
+        <!-- Page content -->
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <img src="resources/shoebill.png" id="staringShoebillImg">
             <button id="ASMRButton">shoebill asmr</button>
         </div>
+
+        <!-- Sidebar -->
+        <div id="menu-button">☰</div>
+        <div id="sidebar"></div>
+        <script>
+            createSidebar()
+        </script>
     </body>
 </html>
