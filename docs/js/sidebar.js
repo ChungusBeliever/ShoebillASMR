@@ -3,6 +3,7 @@ const sidebar = document.getElementById("sidebar")
 
 function changeSidebar() {
     sidebar.classList.toggle("active")
+    menuButton.classList.toggle("active")
 }
 
 function createSidebar() {

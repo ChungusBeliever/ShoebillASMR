@@ -26,26 +26,3 @@ body {
     max-width: 80%;
     height: auto;
 }
-
-#menu-button {
-    color: white;
-    font-size: 2.25rem;
-    cursor: pointer;
-    max-width: 2.25rem;   
-    padding: 0.8rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-#sidebar {
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    transition: 0.3;
-}
-
-#sidebar.active {
-    left: 0px;
-}
