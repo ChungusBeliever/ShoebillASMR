@@ -14,11 +14,11 @@ function createSidebar() {
         },
         {
             title: "ASMR",
-            page: "index.html"
+            page: "asmr.html"
         },
         {
-            title: "More",
-            page: "index.html"
+            title: "Gallery",
+            page: "gallery.html"
         }
     ]
 
