@@ -31,3 +31,4 @@ function createSidebar() {
 }
 
 menuButton.addEventListener("click", changeSidebar);
+document.addEventListener("DOMContentLoaded", createSidebar)
