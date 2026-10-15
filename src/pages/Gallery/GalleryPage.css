@@ -5,6 +5,11 @@
     justify-content: center;
 }
 
+.photo img {
+    max-width: 80%;
+    height: auto;
+}
+
 .photo p {
     margin-top: 1%;
 }

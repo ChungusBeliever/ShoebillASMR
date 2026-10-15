@@ -1,4 +1,4 @@
-#menu-button {
+.menu-button {
     color: white;
     font-size: 2.25rem;
     cursor: pointer;
@@ -11,11 +11,11 @@
     transition: 0.25s;
 }
 
-#menu-button.active {
+.menu-button.active {
     left: 300px;
 }
 
-#sidebar {
+.sidebar {
     width: 300px;
     height: 100%;
     position: fixed;
@@ -29,11 +29,11 @@
     justify-content: flex-start;
 }
 
-#sidebar.active {
+.sidebar.active {
     left: 0px;
 }
 
-#sidebar a {
+.sidebar a {
     padding: 20%;
     color: azure;
 }
