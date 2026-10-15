@@ -1,0 +1,7 @@
+/* Games are fixed-size windows, so let narrow screens scroll sideways. */
+.game-stage {
+    max-width: 100%;
+    overflow: auto;
+    margin: 1rem 0;
+    padding: 0 8px 8px 0;
+}

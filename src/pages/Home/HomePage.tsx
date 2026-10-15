@@ -10,6 +10,7 @@ export default function HomePage() {
       <h1>Quick start</h1>
       <Link to="/asmr">Shoebill ASMR</Link>
       <Link to="/gallery">Gallery</Link>
+      <Link to="/games">Games</Link>
       <h1>About</h1>
       <p>The shoebill!!!</p>
       <hr className="home-divider" />
