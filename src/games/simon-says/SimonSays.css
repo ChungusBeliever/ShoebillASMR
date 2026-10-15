@@ -1,0 +1,8 @@
+.fl-button.simon-pad {
+    background: var(--dark);
+}
+
+.fl-button.simon-pad:active,
+.fl-button.simon-pad.lit {
+    background: var(--bright);
+}
