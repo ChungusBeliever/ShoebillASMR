@@ -1,0 +1,14 @@
+.home-image {
+    width: 80%;
+    max-width: 520px;
+    height: auto;
+    border: 3px solid var(--accent);
+    margin-top: 1rem;
+}
+
+.home-divider {
+    width: 240px;
+    border: 0;
+    border-top: 2px dashed var(--accent);
+    margin: 1.5rem 0;
+}

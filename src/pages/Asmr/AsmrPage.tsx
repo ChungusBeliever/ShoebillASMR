@@ -10,6 +10,7 @@ export default function AsmrPage() {
   return (
     <PageLayout title="Shoebill ASMR">
       <img src={shoebillImg} className="asmr-image" alt="A shoebill staring at the camera" />
+      <p className="asmr-hint">best with headphones</p>
       <button className="asmr-button" onClick={playSounds}>
         shoebill asmr
       </button>

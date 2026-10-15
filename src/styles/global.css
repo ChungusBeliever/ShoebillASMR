@@ -1,3 +1,15 @@
+:root {
+    --accent: #e8b86d; /* straw colour of the shoebill's bill */
+}
+
 body {
     background-color: black;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: white;
 }

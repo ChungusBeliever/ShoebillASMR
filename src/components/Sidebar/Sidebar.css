@@ -37,3 +37,11 @@
     padding: 20%;
     color: azure;
 }
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: var(--accent);
+}
