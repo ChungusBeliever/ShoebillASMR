@@ -1,0 +1,129 @@
+.mp3 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 0.75rem;
+    border: 3px solid var(--accent, #e8b86d);
+    background-color: #111;
+    color: aliceblue;
+}
+
+.mp3:focus-visible {
+    outline: 3px solid var(--accent, #e8b86d);
+    outline-offset: 2px;
+}
+
+.mp3__menubar {
+    display: flex;
+    border-bottom: 1px solid #666;
+}
+
+.mp3__menu {
+    position: relative;
+}
+
+.mp3__menu > button {
+    padding: 0.4rem 0.9rem;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.mp3__menu > button:hover {
+    background-color: var(--accent, #e8b86d);
+    color: black;
+}
+
+.mp3__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+    min-width: 10rem;
+    margin: 0;
+    padding: 0.2rem 0;
+    list-style: none;
+    border: 1px solid #666;
+    background-color: #111;
+}
+
+.mp3__dropdown button {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 0.3rem 0.75rem;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.mp3__dropdown button:hover {
+    background-color: var(--accent, #e8b86d);
+    color: black;
+}
+
+.mp3__dropdown kbd {
+    font: inherit;
+    opacity: 0.7;
+}
+
+.mp3__now-playing {
+    box-sizing: border-box;
+    margin: 0.75rem 0;
+    padding: 0.35rem 0.6rem;
+    border: 1px solid #666;
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+
+.mp3__songs {
+    box-sizing: border-box;
+    height: 15rem;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    list-style: none;
+    border: 1px solid #666;
+    background-color: black;
+}
+
+.mp3__songs li {
+    padding: 0.15rem 0.6rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.mp3__songs li.is-selected {
+    background-color: var(--accent, #e8b86d);
+    color: black;
+}
+
+.mp3__controls {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.75rem;
+}
+
+.mp3__controls button {
+    flex: 1;
+    padding: 0.6rem 0;
+    border: 1px solid #666;
+    background-color: #222;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.mp3__controls button:hover,
+.mp3__controls button:active {
+    background-color: var(--accent, #e8b86d);
+    color: black;
+}
