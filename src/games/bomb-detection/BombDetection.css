@@ -1,0 +1,87 @@
+.bomb {
+    position: relative;
+    width: fit-content;
+    padding: 1rem;
+    border: 3px solid var(--accent, #e8b86d);
+    background-color: #111;
+    color: aliceblue;
+}
+
+.bomb__board {
+    display: grid;
+    grid-auto-rows: 50px;
+}
+
+.bomb__cell {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid #666;
+    background-color: #222;
+    color: inherit;
+    font: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bomb__cell:not(.is-open):hover {
+    background-color: #333;
+}
+
+.bomb__cell img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+}
+
+/* An opened cell looks pressed in. */
+.bomb__cell.is-open {
+    background-color: #c4c4c4;
+    border-color: #555 #fff #fff #555;
+    color: black;
+    cursor: default;
+}
+
+.bomb__cell.is-red {
+    background-color: red;
+}
+
+.bomb__status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+}
+
+.bomb__status output {
+    padding: 0.35rem 0.6rem;
+    border: 1px solid #666;
+    background-color: black;
+}
+
+.bomb__message {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.88);
+}
+
+.bomb__message p {
+    margin: 0;
+}
+
+.bomb__message button {
+    padding: 0.4rem 1.5rem;
+    border: 2px solid black;
+    background-color: var(--accent, #e8b86d);
+    color: black;
+    font: inherit;
+    cursor: pointer;
+}
