@@ -1,0 +1,10 @@
+{
+  // The Worker name must match the project name in the Cloudflare dashboard.
+  "name": "shoebillasmr",
+  "compatibility_date": "2026-10-15",
+  "assets": {
+    "directory": "./dist",
+    // Harmless fallback; the site uses hash URLs (/#/asmr) so it never actually needs it.
+    "not_found_handling": "single-page-application"
+  }
+}
