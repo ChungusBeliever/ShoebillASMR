@@ -40,3 +40,6 @@ Thumbs.db
 .eslintcache
 .vite/
 coverage/
+
+# patches
+\!patches/
