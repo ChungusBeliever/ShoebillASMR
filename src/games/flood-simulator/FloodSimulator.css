@@ -1,0 +1,75 @@
+.flood {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    width: fit-content;
+    padding: 1rem;
+    border: 3px solid var(--accent, #e8b86d);
+    background-color: #111;
+    color: aliceblue;
+}
+
+.flood__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.flood__colour {
+    width: 3rem;
+    height: 2.5rem;
+    border: 2px solid #666;
+    cursor: pointer;
+}
+
+.flood__colour:hover:not(:disabled) {
+    border-color: white;
+}
+
+.flood__colour:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.flood__clicks {
+    box-sizing: border-box;
+    padding: 0.35rem 0.6rem;
+    border: 1px solid #666;
+    background-color: black;
+    text-align: center;
+}
+
+.flood__board {
+    display: grid;
+    grid-auto-rows: 30px;
+}
+
+.flood__cell {
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.6) rgba(0, 0, 0, 0.45) rgba(0, 0, 0, 0.45) rgba(255, 255, 255, 0.6);
+}
+
+.flood__message {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.88);
+}
+
+.flood__message p {
+    margin: 0;
+}
+
+.flood__message button {
+    padding: 0.4rem 1.5rem;
+    border: 2px solid black;
+    background-color: var(--accent, #e8b86d);
+    color: black;
+    font: inherit;
+    cursor: pointer;
+}
