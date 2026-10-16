@@ -1,0 +1,121 @@
+.life {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: fit-content;
+    padding: 1rem;
+    border: 3px solid var(--accent, #e8b86d);
+    background-color: #111;
+    color: aliceblue;
+}
+
+.life__grid {
+    display: grid;
+    grid-auto-rows: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.life__cell {
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    background-color: #dcdcdc;
+    border: 1px solid;
+    border-color: #fff #8a8a8a #8a8a8a #fff;
+}
+
+.life__cell.is-alive {
+    background-color: blue;
+    border-color: #8a8a8a #fff #fff #8a8a8a;
+}
+
+.life__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.life__controls button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #666;
+    background-color: #222;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.life__controls button:hover {
+    background-color: var(--accent, #e8b86d);
+    color: black;
+}
+
+/* The run/stop button carries a small indicator light, like the original. */
+.life__run::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    vertical-align: -1px;
+    background-color: #888;
+    border: 1px solid #333;
+}
+
+.life__run[aria-pressed="true"]::before {
+    background-color: #3c3;
+}
+
+.life__dialog {
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    border: 2px solid var(--accent, #e8b86d);
+    background-color: #111;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+}
+
+.life__dialog-title {
+    margin: 0;
+    padding: 0.4rem 0.75rem;
+    background-color: var(--accent, #e8b86d);
+    color: black;
+}
+
+.life__lexicons {
+    height: 15rem;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    list-style: none;
+}
+
+.life__lexicons li {
+    padding: 0.15rem 0.6rem;
+    cursor: pointer;
+}
+
+.life__lexicons li.is-selected {
+    background-color: var(--accent, #e8b86d);
+    color: black;
+}
+
+.life__dialog-add {
+    padding: 0.6rem;
+    border: 0;
+    border-top: 1px solid #666;
+    background-color: #222;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.life__dialog-add:hover {
+    background-color: var(--accent, #e8b86d);
+    color: black;
+}
