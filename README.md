@@ -1,3 +1,3 @@
 # Shoebill ASMR
 
-https://chungusbeliever.github.io/ShoebillASMR/
+shoebillasmr.cheezeyeggs.workers.dev
